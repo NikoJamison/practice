@@ -1,0 +1,12 @@
+var pickRandomWord = function (words) {
+return words[Math.floor(Math.random() * words.length)];
+};
+var generateRandomInsult = function() {
+var randomName = ["Nick", "Kim", "Cloudy"];
+var randomInsult = ["silly", "mean", "prissy"];
+var randomMonth = ["July", "August", "March"];
+var randomString = "Did you hear that " + pickRandomWord(randomName) + " is plain " + pickRandomWord(randomInsult) + " in the month of " + pickRandomWord(randomMonth);
+return randomString;
+};
+undefined
+generateRandomInsult();
